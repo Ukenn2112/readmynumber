@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		13C62D192DAA4FAA00C4B773 /* readmynumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = readmynumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C62D192DAA4FAA00C4B773 /* マイ証明書.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "マイ証明書.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		130C47082DAA511B00ABA648 /* Exceptions for "readmynumber" folder in "マイ証明書" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 13C62D182DAA4FAA00C4B773 /* マイ証明書 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		13C62D1B2DAA4FAA00C4B773 /* readmynumber */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				130C47082DAA511B00ABA648 /* Exceptions for "readmynumber" folder in "マイ証明書" target */,
+			);
 			path = readmynumber;
 			sourceTree = "<group>";
 		};
@@ -40,7 +53,7 @@
 		13C62D1A2DAA4FAA00C4B773 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13C62D192DAA4FAA00C4B773 /* readmynumber.app */,
+				13C62D192DAA4FAA00C4B773 /* マイ証明書.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13C62D182DAA4FAA00C4B773 /* readmynumber */ = {
+		13C62D182DAA4FAA00C4B773 /* マイ証明書 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13C62D272DAA4FAB00C4B773 /* Build configuration list for PBXNativeTarget "readmynumber" */;
+			buildConfigurationList = 13C62D272DAA4FAB00C4B773 /* Build configuration list for PBXNativeTarget "マイ証明書" */;
 			buildPhases = (
 				13C62D152DAA4FAA00C4B773 /* Sources */,
 				13C62D162DAA4FAA00C4B773 /* Frameworks */,
@@ -63,11 +76,11 @@
 			fileSystemSynchronizedGroups = (
 				13C62D1B2DAA4FAA00C4B773 /* readmynumber */,
 			);
-			name = readmynumber;
+			name = "マイ証明書";
 			packageProductDependencies = (
 			);
 			productName = readmynumber;
-			productReference = 13C62D192DAA4FAA00C4B773 /* readmynumber.app */;
+			productReference = 13C62D192DAA4FAA00C4B773 /* マイ証明書.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -86,11 +99,11 @@
 				};
 			};
 			buildConfigurationList = 13C62D142DAA4FAA00C4B773 /* Build configuration list for PBXProject "readmynumber" */;
-			developmentRegion = en;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				ja,
 			);
 			mainGroup = 13C62D102DAA4FAA00C4B773;
 			minimizedProjectReferenceProxies = 1;
@@ -99,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13C62D182DAA4FAA00C4B773 /* readmynumber */,
+				13C62D182DAA4FAA00C4B773 /* マイ証明書 */,
 			);
 		};
 /* End PBXProject section */
@@ -249,17 +262,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = readmynumber/readmynumber.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"readmynumber/Preview Content\"";
 				DEVELOPMENT_TEAM = 4H88DC6RMN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = readmynumber/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "マイ証明書";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "マイナンバーカードを読み取ります";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -267,9 +285,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meikenn.readmynumber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -278,17 +300,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = readmynumber/readmynumber.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"readmynumber/Preview Content\"";
 				DEVELOPMENT_TEAM = 4H88DC6RMN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = readmynumber/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "マイ証明書";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "マイナンバーカードを読み取ります";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,9 +323,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meikenn.readmynumber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -314,7 +345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13C62D272DAA4FAB00C4B773 /* Build configuration list for PBXNativeTarget "readmynumber" */ = {
+		13C62D272DAA4FAB00C4B773 /* Build configuration list for PBXNativeTarget "マイ証明書" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13C62D282DAA4FAB00C4B773 /* Debug */,
